@@ -3,7 +3,9 @@ version: "3.8"
 services:
   runner:
     # image: ghcr.io/zeeptin/gluatest
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: gluatest_runner
     stop_grace_period: 2s
     volumes:
