@@ -61,7 +61,8 @@ jobs:
 
           git clone --depth 1 https://github.com/zeeptin/GLuaTest.git gluatest
           cd ./gluatest
-          cp docker/docker-compose.yml $GITHUB_WORKSPACE/docker-compose.yml
+          cp -r ./docker/* $GITHUB_WORKSPACE
+
 
           cd $GITHUB_WORKSPACE
 
