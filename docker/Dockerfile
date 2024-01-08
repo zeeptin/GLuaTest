@@ -28,7 +28,7 @@ COPY base_requirements.txt $gmodroot/requirements.txt
 # GitHub Server Keys
 RUN ssh-keyscan github.com >> /home/steam/github_known_hosts
 
-RUN ls -l /home/steam/gmodserver/garrysmod/addons
+RUN ls -l /home/steam/gmodserver/garrysmod/addons/projects
 
 # Entrypoint
 COPY entrypoint.sh $gmodroot/entrypoint.sh
