@@ -4,7 +4,7 @@ services:
   runner:
     # image: ghcr.io/zeeptin/gluatest
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
     container_name: gluatest_runner
     stop_grace_period: 2s
