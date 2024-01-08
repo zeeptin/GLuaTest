@@ -3,7 +3,7 @@ name: Build and Push
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   build:
@@ -48,9 +48,9 @@ jobs:
             --dockerfile Dockerfile \
             --dockerfile-context . \
             --continue-after 15 \
-            --tag ghcr.io/cfc-servers/gluatest:latest \
-            --tag ghcr.io/cfc-servers/gluatest:${{ steps.get_version.outputs.VERSION }}
+            --tag ghcr.io/zeeptin/gluatest:latest \
+            --tag ghcr.io/zeeptin/gluatest:${{ steps.get_version.outputs.VERSION }}
 
       - name: Tag and push slim images
         run: |
-          docker push ghcr.io/cfc-servers/gluatest --all-tags
+          docker push ghcr.io/zeeptin/gluatest --all-tags
