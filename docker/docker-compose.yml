@@ -19,7 +19,7 @@ services:
 
       - type: bind
         source: $PROJECT_DIR
-        target: /home/steam/gmodserver
+        target: /home/steam/gmodserver/
         read_only: true
 
     environment:
