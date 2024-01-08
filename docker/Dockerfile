@@ -7,6 +7,7 @@ RUN apt update && apt install -y git python3-minimal && apt autoremove
 ARG gmodroot=/home/steam/gmodserver
 ARG server=/home/steam/gmodserver/garrysmod
 
+
 USER steam
 RUN ./steamcmd.sh +force_install_dir $gmodroot +login anonymous +app_update 4020 -beta x86-64 validate +quit
 

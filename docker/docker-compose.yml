@@ -21,7 +21,8 @@ services:
 
       - type: bind
         source: $PROJECT_DIR
-        target: /home/steam/gmodserver/
+        target: /home/steam/gmodserver/garrysmod/addons/project
+        read_only: true
 
     environment:
       - GAMEMODE=$GAMEMODE
