@@ -18,7 +18,7 @@ if [[ ! -z "$SSH_PRIVATE_KEY" ]]; then
     ssh-add - <<< "$SSH_PRIVATE_KEY"
 fi
 
-cd "$gmodroot"/
+cd "$server"/addons
 
 function getCloneLine {
     python3 - <<-EOF
